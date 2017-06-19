@@ -22,7 +22,7 @@ h3 {
 }
 header {
   background-color: white;
-  widith: 100%;
+  width: 100%;
   height:70px;
   border-bottom: #cccccc solid 2px;
 }
@@ -180,9 +180,20 @@ footer {
 
 
 @media (max-width: 980px) {
-
-
+  #header-content {
+    width:85%;
+  }
+  #content {
+    width:80%;
+  }
+  section {
+    width:60%;
+  }
+  aside {
+    width: 35%;
+  }
 }
+
 @media (max-width: 768px) {
 
 
