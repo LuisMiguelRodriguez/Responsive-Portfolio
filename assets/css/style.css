@@ -189,6 +189,14 @@ footer {
   section {
     width:60%;
   }
+
+  section img {
+    width: 100%;
+  }
+  .projects {
+    float: none;
+    clear:both;
+  }
   aside {
     width: 35%;
   }
