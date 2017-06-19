@@ -7,6 +7,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -274,18 +275,28 @@ footer {
 @media (max-width: 640px) {
   header {
     width:100%;
+    margin-bottom: 20px;
   }
 
+
+  #navigation {
+    width:100%;
+    text-align: center;
+  }
   #header-content {
     width: 100%;
     position: relative;
     clear:both;
   }
   #logo {
-    width: 100%;
-    clear: both;
-
-    padding-left: 100px;
+    width: 92%;
+    padding:0px;
+    padding-left: 50px;
+    line-height: 50px;
+    border-radius: 0px;
+  }
+  #log h4 {
+    text-align: center;
   }
   header ul {
     width: 100%;
@@ -295,12 +306,15 @@ footer {
   }
   .nav-list {
     float: left;
-    margin-top: 0px;
-    padding-left: 120px;
-    padding-right: 0px;
+    margin-top: 2px;
+    margin-right: 0px;
   }
-  header {
-    margin-bottom: 20px;
+  .nav-list li {
+    padding:10px 55px;
+    width:10%;
+  }
+  .nav-list li:last-child {
+    padding:10px 55px;
   }
   section img {
     width: 100%;
