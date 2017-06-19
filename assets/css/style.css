@@ -330,3 +330,23 @@ footer {
 
 
 }
+
+@media (max-width: 496px) {
+  .nav-list li {
+    padding: 11px 150px;
+    width: 31%;
+  }
+  .nav-list {
+    width: 104%;
+    margin-top: 0px;
+  }
+  .nav-list li:last-child {
+    padding: 10px 150px;
+}
+  header {
+    width: 96%;
+    margin-bottom: 65px;
+  }
+
+
+}
