@@ -55,6 +55,12 @@ header {
   font-size: 18px;
   border-radius: 3px;
 }
+.nav-list li:last-child {
+  float: left;
+  padding-right: 0px;
+  font-size: 18px;
+  border-radius: 3px;
+}
 
 .nav-list li a {
   color: #333333;
@@ -102,17 +108,38 @@ aside {
 /*portfolio css*/
 .projects {
   margin-bottom:60px;
+  position: relative;
 }
 
-.label {
-  width:100%;
-  height: 50px;
-  background-color: #4aaaa5;
+
+.work {
   position: relative;
-  margin-top: -70px;
-  color: white;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 40px;
+  color: #fff;
   text-align: center;
-  line-height: 50px;
+  background: #4aaaa5;
+  border-bottom: 0;
 }
 
 /*helper classes */
@@ -184,29 +211,108 @@ footer {
     width:85%;
   }
   #content {
-    width:80%;
+    width:85%;
   }
   section {
     width:60%;
-  }
-
-  section img {
-    width: 100%;
-  }
-  .projects {
-    float: none;
-    clear:both;
-  }
+    margin-left: 0px;
+ }
   aside {
     width: 35%;
+  }
+  .work img{
+    width:100%;
+  }
+  .work {
+    width:100%;
   }
 }
 
 @media (max-width: 768px) {
+  #header-content {
+    width:98%;
+    float: none;
+    clear: both;
+  }
 
+  #nav {
+    width:25%;
+  }
+  #content {
+    width:95%;
+  }
+  section {
+    width:100%;
+    position: relative;
+  }
+
+  section img {
+    width: 50%;
+  }
+
+
+  aside {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .work img{
+    width:100%;
+  }
+  .work {
+    width:45%;
+  }
+  .work:nth-child(even) {
+    margin-right: 10;
+  }
+  .work:nth-child(odd) {
+    float:right;
+  }
 
 }
+
 @media (max-width: 640px) {
+  header {
+    width:100%;
+  }
+
+  #header-content {
+    width: 100%;
+    position: relative;
+    clear:both;
+  }
+  #logo {
+    width: 100%;
+    clear: both;
+
+    padding-left: 100px;
+  }
+  header ul {
+    width: 100%;
+    background-color: white;
+    display: block;
+
+  }
+  .nav-list {
+    float: left;
+    margin-top: 0px;
+    padding-left: 120px;
+    padding-right: 0px;
+  }
+  header {
+    margin-bottom: 20px;
+  }
+  section img {
+    width: 100%;
+  }
+
+  .work img{
+    width:100%;
+  }
+  .work {
+    width:100%;
+  }
+
 
 
 }
